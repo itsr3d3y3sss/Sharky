@@ -48,7 +48,7 @@ class SharkyTools(BASECOG):
         except discord.HTTPException:
             await ctx.send("Please use a valid UserID")
 
-    @commands.command(name="avatar", aliases=["av", "picture"])
+    @commands.command(name="pfp", aliases=["av", "picture"])
     @commands.bot_has_permissions(embed_links=True, send_messages=True)
     @checks.mod_or_permissions(manage_messages=True)
     @commands.guild_only()
